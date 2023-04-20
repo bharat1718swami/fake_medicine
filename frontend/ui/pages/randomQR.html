@@ -1,0 +1,25 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+</script>
+
+<div class="qr-code-container" style="position: absolute;transform: translate(-50%,-50%);top: 50%;left: 50%;">
+    <div class="qr-code" style="margin:auto;width:max-content;"></div>
+</div>
+
+<script>
+    let qr_code_element = document.querySelector(".qr-code");
+    console.log(1, localStorage.getItem('user_profile'));
+    var url = "http://localhost:5173/pages/timeline.html?id=0"
+    generate(url);
+
+    function generate(user_input) {
+        console.log(user_input)
+        var qrcode = new QRCode(qr_code_element, {
+            text: user_input,
+            width: 600, //128
+            height: 600,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.L
+        });
+    }
+</script>

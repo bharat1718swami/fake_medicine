@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/timeline.css">
+    <title>Timeline Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="../js/timeline.js"></script>
+</head>
+
+<body>
+    <div class="random" id="random">
+        <a href="randomQR.html" style="position: absolute; right: 40px; font-size: 20px;">Check a Random QR Code</a>
+    </div>
+    <div class="random" id="random">
+        <a href="details.html" style="position: absolute; right: 40px;top: 80px; font-size: 20px;">Enter your Entries</a>
+    </div>
+
+    <div class="check" style="width: fit-content;margin: auto;margin-top:4vh;">
+        <label for="medicinID" style="margin-right: 20px;font-weight: bold;">Medicine ID</label>
+        <input type="text" id="medicinID" style="height: 30px;width: 200px;margin-bottom: 40px;">
+        <a href="#" id="button" style="text-decoration: none;font-weight: bold; border: 1px solid black; padding: 7px;margin-left: 20px;">Check</a>
+    </div>
+    <section class="root hide" id="section">
+        <figure>
+            <img src="https://images.melorra.com/image/upload/h_350,w_350,f_auto,fl_progressive/v1571040732/live-melorra/dev/catalogue/images/TG/OPT/580/W19WTG16F_C_580.jpg" alt="">
+            <figcaption>
+                <h1 id="medicine_name"></h1>
+                <h4>medicine ID: <span id="medicineID"></span></h4><br>
+                <h6>Manufacturing Date: <span id="mdate"></span></h6>
+                <h6>Expiry Date: <span id="edate"></span></h6><br>
+                <h4>MRP: &#x20B9;<span id="cost"></span>/-</h4>
+            </figcaption>
+        </figure>
+        <div class="order-track" id="order-track">
+
+        </div>
+    </section>
+</body>
+
+</html>

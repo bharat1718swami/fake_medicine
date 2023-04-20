@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockchain For Medicines </title>
+    <link rel="stylesheet" href="./css/auth.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1 class="heading">MEDYBLOCKERS</h1>
+            <h3 class="title"> Login & Registration </h3>
+        </header>
+
+
+        <div class="container">
+
+
+            <div class="slider"></div>
+            <div class="btn">
+                <button class="login">Login</button>
+                <button class="signup">Signup</button>
+            </div>
+
+
+            <div class="form-section">
+
+
+                <div class="login-box">
+                    <input type="email" class="email ele" id="companyID" placeholder="User ID">
+                    <input type="password" class="password ele" id="password" placeholder="Password">
+                    <button class="clkbtn" id="submit" onclick="submit()">Login</button>
+                </div>
+
+
+                <div class="signup-box">
+                    <input type="text" class="name ele" placeholder="Company ID">
+                    <input type="text" class="email ele" placeholder="User ID">
+                    <input type="password" class="password ele" placeholder="Password">
+                    <input type="password" class="password ele" placeholder="Confirm Password">
+                    <button class="clkbtn">Signup</button>
+                    <a href="./pages/timeline.html">click</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/auth.js"></script>
+</body>
+
+</html>
